@@ -1,0 +1,49 @@
+1.#Hello World
+print("Hello, World!")
+2.#Addition of two numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+sum = a + b
+print("Sum:", sum)
+3.#check Even or Odd
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+4.#Find Largest of three numbers
+a = int(input())
+b = int(input())
+c = int(input())
+if a >= b and a >= c:
+    print("Largest is", a)
+elif b >= a and b >= c:
+    print("Largest is", b)
+else:
+    print("Largest is", c)
+5.#Check Prime Number
+num = int(input("Enter a number: "))
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+else:
+    print("Not Prime")
+6.#Factorial of a Number
+num = int(input("Enter a number: "))
+fact = 1
+for i in range(1, num+1):
+    fact *= i
+print("Factorial:", fact)
+7.#Reverse a String
+s = input("Enter a string: ")
+print("Reversed string:", s[::-1])
+8.#Check Palindrome String
+s = input("Enter string: ")
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
